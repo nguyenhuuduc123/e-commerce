@@ -40,6 +40,12 @@ const ProductCart = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              numquam repudiandae praesentium, necessitatibus quidem obcaecati
+              aliquam fuga quas, eveniet pariatur ipsa, porro unde quae expedita
+              accusamus exercitationem ipsum libero possimus.
+            </p>
             <p className="price">$2000.00</p>
           </div>
           <div className="action-bar position-absolute">
@@ -93,6 +99,12 @@ const ProductCart = (props) => {
               edit={false}
               activeColor="#ffd700"
             />
+            <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
+              numquam repudiandae praesentium, necessitatibus quidem obcaecati
+              aliquam fuga quas, eveniet pariatur ipsa, porro unde quae expedita
+              accusamus exercitationem ipsum libero possimus.
+            </p>
             <p className="price">$2000.00</p>
           </div>
           <div className="action-bar position-absolute">
