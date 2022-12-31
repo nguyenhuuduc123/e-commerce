@@ -9,7 +9,6 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                {" "}
                 Free shipping over $100 Free Return
               </p>
             </div>
@@ -46,7 +45,10 @@ const Header = () => {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/compare-product"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/compare.svg" alt="compare" />
                     <p className="mb-0">
                       Compare <br />
@@ -55,7 +57,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/wishlist"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/wishlist.svg" alt="wishlist" />
                     <p className="mb-0">
                       Favourite <br /> wishlist
@@ -63,7 +68,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/login"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/user.svg" alt="user" />
                     <p className="mb-0">
                       Login <br /> My Account
@@ -71,7 +79,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/cart"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column">
                       <span className="badge bg-white text-dark">2</span>
@@ -98,9 +109,8 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" alt="menu" />{" "}
+                      <img src="images/menu.svg" alt="menu" />
                       <span className="me-5 d-inline-block">
-                        {" "}
                         Shop Categories
                       </span>
                     </button>
@@ -109,17 +119,17 @@ const Header = () => {
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="#3">
                           Action
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="#2">
                           Another action
                         </Link>
                       </li>
                       <li>
-                        <Link className="dropdown-item text-white" to="#">
+                        <Link className="dropdown-item text-white" to="#1">
                           Something else here
                         </Link>
                       </li>
