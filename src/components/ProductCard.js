@@ -1,7 +1,7 @@
 import React from "react";
 import ReactStars from "react-rating-stars-component";
-
 import { Link, useLocation } from "react-router-dom";
+import ReactImageZoom from "react-image-zoom";
 const ProductCart = (props) => {
   const { grid } = props;
   let location = useLocation();
@@ -69,7 +69,7 @@ const ProductCart = (props) => {
       <div
         className={`${location.pathname === "/store" ? `gr-${grid}` : "col-3"}`}
       >
-        <Link className="product-card position-relative">
+        <Link to="/product/:id" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
               <img src="images/wish.svg" alt="wishlist" />

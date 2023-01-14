@@ -3,7 +3,14 @@ import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import ProductCard from "../components/ProductCard";
 import ReactStars from "react-rating-stars-component";
+import ReactImageZoom from "react-image-zoom";
 const SingleProduct = () => {
+  const props = {
+    width: 400,
+    height: 500,
+    zoomWidth: 500,
+    img: "https://tse2.mm.bing.net/th?id=OIP.9JV1Q-DCwhRNB7OQPqfCzgHaIq&pid=Api&P=0",
+  };
   const [orderedProduct, setOrderedProduct] = useState(false);
   return (
     <>
@@ -12,8 +19,52 @@ const SingleProduct = () => {
       <div className="main-product-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
-            <div className="col-6"></div>
-            <div className="col-6"></div>
+            <div className="col-6">
+              <div className="main-product-image">
+                <div>
+                  <ReactImageZoom {...props} />
+                </div>
+              </div>
+              <div className="other-product-images d-flex flex-wrap gap-15">
+                <div>
+                  <img
+                    src="https://tse2.mm.bing.net/th?id=OIP.9JV1Q-DCwhRNB7OQPqfCzgHaIq&pid=Api&P=0"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://tse2.mm.bing.net/th?id=OIP.9JV1Q-DCwhRNB7OQPqfCzgHaIq&pid=Api&P=0"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://tse2.mm.bing.net/th?id=OIP.9JV1Q-DCwhRNB7OQPqfCzgHaIq&pid=Api&P=0"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://tse2.mm.bing.net/th?id=OIP.9JV1Q-DCwhRNB7OQPqfCzgHaIq&pid=Api&P=0"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <div className="main-product-details">
+                <div className="border-bottom">
+                  <h3 className="title">
+                    kid headphone bulk 10 pack multi colored for
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
